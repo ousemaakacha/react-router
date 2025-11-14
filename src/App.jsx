@@ -1,36 +1,38 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <nav className="">
-        <div className="">
-          <span>MyStore</span>
-          <button>
-            <span></span>
-          </button>
-          <div>
-            <ul>
-              <li>
-                <span>Home</span>
-              </li>
+      <BrowserRouter>
+        <nav className="navbar navbar-light mb-4">
+          <div className="container">
+            <Link className="navbar-brand" to="/">
+              STORE
+            </Link>
 
-              <li>
-                <span>About Us</span>
-              </li>
+            <div>
+              <ul>
+                <li>
+                  <span>Home</span>
+                </li>
 
-              <li>
-                <span>Products</span>
-              </li>
-            </ul>
+                <li>
+                  <span>About Us</span>
+                </li>
+
+                <li>
+                  <span>Products</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+        </nav>
+        {/* <Routes> */}
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/products" element={<Products />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* </Routes> */}
+      </BrowserRouter>
     </>
   );
 }
