@@ -1,37 +1,12 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <nav className="navbar navbar-light mb-4">
-          <div className="container">
-            <Link className="navbar-brand" to="/">
-              STORE
-            </Link>
+        <Navbar />
 
-            <div>
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    Home
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link" to="/about">
-                    About us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/products">
-                    Products
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
         {/* <Routes> */}
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/products" element={<Products />} /> */}
