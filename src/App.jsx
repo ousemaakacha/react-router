@@ -11,17 +11,22 @@ function App() {
             </Link>
 
             <div>
-              <ul>
-                <li>
-                  <span>Home</span>
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
                 </li>
 
-                <li>
-                  <span>About Us</span>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">
+                    About us
+                  </Link>
                 </li>
-
-                <li>
-                  <span>Products</span>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/products">
+                    Products
+                  </Link>
                 </li>
               </ul>
             </div>
