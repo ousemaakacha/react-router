@@ -20,5 +20,25 @@ export default function ProductDetail() {
 
   useEffect(getProdDet, []);
 
-  return <></>;
+  return (
+    <>
+      <div className="container m-5">
+        <div className="row">
+          <div className="col-6">
+            <img src={product.image} className="image-fluid" />
+          </div>
+
+          <div className="col-6">
+            <h1>{product.title}</h1>
+            <h3 className="text-success">{product.price} €</h3>
+            <p className="mt-3">{product.description}</p>
+            <p className="text-uppercase">
+              <strong>CATEGORY: </strong>
+              {product.category}
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
