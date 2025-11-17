@@ -36,7 +36,12 @@ export default function Products() {
                   <p className="card-text fw-bold">{product.price} €</p>
                 </div>
                 <div className="card-footer text-center">
-                  <button className="btn btn-primary">About the product</button>
+                  <Link
+                    to={`/products/${product.id}`}
+                    className="btn btn-primary w-100"
+                  >
+                    About the product
+                  </Link>
                 </div>
               </div>
             </div>
